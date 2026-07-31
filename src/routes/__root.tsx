@@ -1,9 +1,10 @@
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
-import { Header } from "#/components/base/header/Header";
-import appCss from "../styles.css?url";
 import { Footer } from "#/components/base/footer/Footer";
+import { Header } from "#/components/base/header/Header";
+import { ScrollToTop } from "#/components/base/ScrollToTop";
+import appCss from "../styles.css?url";
 
 export const Route = createRootRoute({
 	head: () => ({
@@ -38,6 +39,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 			<body>
 				<Header />
 				<main>{children}</main>
+				<ScrollToTop />
 				<Footer />
 				<TanStackDevtools
 					config={{

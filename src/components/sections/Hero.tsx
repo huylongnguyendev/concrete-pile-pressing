@@ -1,10 +1,10 @@
-import { Link } from "@tanstack/react-router";
-import { Section } from "../base/Section";
 import {
 	BuildingsIcon,
 	CaretDoubleDownIcon,
 	PhoneCallIcon,
 } from "@phosphor-icons/react";
+import { Link } from "@tanstack/react-router";
+import { Section } from "../base/Section";
 import { Button } from "../ui/button";
 
 export function Hero() {
