@@ -28,12 +28,6 @@ const headerNavList: IHeaderNav[] = [
 		href: "/dich-vu",
 	},
 	{
-		key: "dich-vu",
-		title: "Các công trình đã thi công của Công ty Ép cọc Bê tông Hùng Dũng",
-		label: "Công trình thi công",
-		href: "/cong-trinh-thi-cong",
-	},
-	{
 		key: "lien-he",
 		title: "Liên hệ tư vấn miễn phí",
 		label: "liên hệ",

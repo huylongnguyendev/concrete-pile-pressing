@@ -37,7 +37,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 			</head>
 			<body>
 				<Header />
-				{children}
+				<main>{children}</main>
 				<Footer />
 				<TanStackDevtools
 					config={{

@@ -35,7 +35,7 @@ export function FooterBot() {
 			</BotList>
 			<BotList title="Liên kết">
 				{headerNavList.map((item) => (
-					<li key={item.key}>
+					<li key={`${item.key}-footer`}>
 						<Link
 							to={item.href}
 							title={item.title}
