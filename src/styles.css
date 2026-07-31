@@ -132,3 +132,11 @@ body,
 body {
   @apply bg-background text-foreground font-sans;
 }
+
+.contain {
+  padding: 0 16px;
+}
+
+.contact-link {
+  @apply flex justify-center items-center px-4 border-x border-primary first:border-r-0 h-full grayscale-75 transition-all duration-300 hover:grayscale-0;
+}
