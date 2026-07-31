@@ -11,6 +11,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --foreground-branding: oklch(17.532% 0.05446 262.214);
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
@@ -81,6 +82,7 @@
 
 @theme inline {
   --font-sans: "Inter Variable", sans-serif;
+  --color-foreground-branding: var(--foreground-branding);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
