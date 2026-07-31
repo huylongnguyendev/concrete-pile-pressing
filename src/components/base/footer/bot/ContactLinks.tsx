@@ -1,6 +1,6 @@
 export function ContactLinks() {
 	return (
-		<div className="font-semibold space-y-6">
+		<div className="font-semibold space-y-4">
 			<p>MXH liên kết:</p>
 			<ul className="flex items-center gap-6">
 				<li>
