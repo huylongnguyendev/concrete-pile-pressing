@@ -5,12 +5,11 @@ import {
 	ShieldCheckIcon,
 } from "@phosphor-icons/react";
 import { Link } from "@tanstack/react-router";
+import { quickStats } from "#/data/hero/quick-stats.data";
 import { Animate } from "../animation/Animate";
+import { CountUp } from "../base/CountUp";
 import { Section } from "../base/Section";
 import { Button } from "../ui/button";
-import { quickStats } from "#/data/hero/quick-stats.data";
-import { useCountUp } from "#/hooks/useCountUp";
-import { CountUp } from "../base/CountUp";
 
 export function Hero() {
 	return (

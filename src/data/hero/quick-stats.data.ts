@@ -11,7 +11,7 @@ const quickStats: IQuickStat[] = [
 		title: "Kinh nghiệm thi công",
 	},
 	{
-		number: 500,
+		number: 1000,
 		prefix: "+",
 		title: "Công trình hoàn thành",
 	},
