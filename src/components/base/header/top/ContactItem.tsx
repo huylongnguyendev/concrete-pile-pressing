@@ -1,4 +1,4 @@
-import type { IHeaderContact } from "#/components/data/header/header-contact.data";
+import type { IHeaderContact } from "#/data/header/header-contact.data";
 import { cn } from "#/lib/utils";
 
 export function ContactItem({

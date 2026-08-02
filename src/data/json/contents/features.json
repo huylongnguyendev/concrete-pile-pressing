@@ -1,0 +1,37 @@
+{
+	"badge": "Lợi thế cạnh tranh",
+	"title": "Tại sao khách hàng tin tưởng lựa chọn chúng tôi",
+	"subtitle": "Chúng tôi mang đến giải pháp tối ưu, an toàn tuyệt đối và tiết kiệm chi phí cho mọi công trình.",
+	"features": [
+		{
+			"icon": "ShieldCheck",
+			"title": "Uy tín & Kinh nghiệm",
+			"description": "Nhiều năm kinh nghiệm thực chiến qua hàng trăm công trình dân dụng và công nghiệp lớn nhỏ."
+		},
+		{
+			"icon": "Wrench",
+			"title": "Máy móc hiện đại",
+			"description": "Hệ thống trang thiết bị, giàn ép và máy móc đồng bộ, đời mới đảm bảo kỹ thuật thi công khắt khe."
+		},
+		{
+			"icon": "UserCheck",
+			"title": "Đội ngũ chuyên gia",
+			"description": "100% kỹ sư giàu kinh nghiệm giám sát trực tiếp, thợ lành nghề tuân thủ nghiêm ngặt quy trình an toàn."
+		},
+		{
+			"icon": "CurrencyDollar",
+			"title": "Chi phí tối ưu",
+			"description": "Báo giá minh bạch, trọn gói, cam kết không phát sinh chi phí ẩn và tối ưu ngân sách cho chủ đầu tư."
+		},
+		{
+			"icon": "Clock",
+			"title": "Đúng tiến độ cam kết",
+			"description": "Lập kế hoạch thi công khoa học, bàn giao công trình chính xác thời hạn giúp tiết kiệm thời gian."
+		},
+		{
+			"icon": "HeadsetIcon",
+			"title": "Hỗ trợ tận tâm 24/7",
+			"description": "Tư vấn giải pháp miễn phí, khảo sát tận chân công trình và đồng hành bảo hành dài hạn sau bàn giao."
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"subtitle": "Giải đáp thắc mắc",
+	"title": "Câu Hỏi Thường Gặp Khi Ép Cọc",
+	"description": "Tổng hợp các thắc mắc phổ biến của chủ đầu tư về dịch vụ thi công ép cọc bê tông tại Đồng Nai và Vũng Tàu.",
+	"questions": [
+		{
+			"q": "Ép cọc bê tông móng nhà có thực sự cần thiết không?",
+			"a": "Rất cần thiết, đặc biệt với các vùng đất yếu, ao hồ san lấp hoặc xây nhà từ 2-3 tầng trở lên. Móng cọc giúp truyền tải trọng lượng công trình xuống lớp đất cứng bên dưới, ngăn chặn tình trạng sụt lún, nứt tường về sau."
+		},
+		{
+			"q": "Hùng Dũng có hỗ trợ khảo sát địa chất và mặt bằng miễn phí không?",
+			"a": "Có! Chúng tôi hỗ trợ cử kỹ thuật viên đến tận công trình tại Đồng Nai và Bà Rịa - Vũng Tàu để khảo sát thực tế mặt bằng, địa chất và tư vấn phương án ép cọc hoàn toàn miễn phí."
+		},
+		{
+			"q": "Chi phí thi công ép cọc bê tông tính như thế nào?",
+			"a": "Chi phí sẽ phụ thuộc vào loại cọc (cọc vuông 200x200, 250x250...), phương pháp ép (ép tải, ép neo, ép robot) và chiều sâu thực tế của công trình. Vui lòng liên hệ Hotline 0967386080 để nhận báo giá chi tiết chính xác nhất."
+		},
+		{
+			"q": "Thời gian thi công ép cọc cho một nhà phố thông thường mất bao lâu?",
+			"a": "Đối với nhà phố dân dụng thông thường, thời gian thi công ép cọc móng chỉ dao động từ 1 đến 3 ngày tùy thuộc vào diện tích mặt bằng và điều kiện thi công."
+		}
+	]
+}

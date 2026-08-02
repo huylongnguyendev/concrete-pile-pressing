@@ -1,7 +1,7 @@
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@phosphor-icons/react";
 import { Link } from "@tanstack/react-router";
 import { Logo } from "#/components/brand/Logo";
-import { headerNavList } from "#/components/data/header/header-nav.data";
+import { headerNavList } from "#/data/header/header-nav.data";
 import { BotList } from "./bot/BotList";
 import { ContactLinks } from "./bot/ContactLinks";
 

@@ -1,0 +1,25 @@
+{
+	"subtitle": "Đánh giá từ khách hàng",
+	"title": "Chủ Đầu Tư Nói Gì Về Chúng Tôi",
+	"description": "Sự hài lòng của khách hàng chính là minh chứng rõ ràng nhất cho uy tín và chất lượng dịch vụ của Ép Cọc Hùng Dũng.",
+	"reviews": [
+		{
+			"name": "Anh Hoàng Minh Tuấn",
+			"role": "Chủ đầu tư nhà phố tại Biên Hòa",
+			"content": "Tôi xây nhà 3 tầng trên nền đất khá yếu, may mắn được giới thiệu đội ngũ Hùng Dũng. Các bạn khảo sát rất kỹ, máy móc ép cọc chuyên nghiệp và đúng tải trọng thiết kế. Rất yên tâm!",
+			"rating": 5
+		},
+		{
+			"name": "Chị Nguyễn Thị Mai",
+			"role": "Chủ nhà tại Nhơn Trạch, Đồng Nai",
+			"content": "Dịch vụ nhanh gọn, đúng tiến độ cam kết. Thợ làm việc cẩn thận, dọn dẹp mặt bằng sạch sẽ sau khi xong việc. Chi phí báo trước rõ ràng không phát sinh.",
+			"rating": 5
+		},
+		{
+			"name": "Đinh Văn Nam",
+			"role": "Chủ thầu xây dựng tại Vũng Tàu",
+			"content": "Là một đơn vị thầu xây dựng, tôi hợp tác lâu dài với Hùng Dũng chuyên mảng ép cọc móng. Uy tín, kỹ thuật chuẩn xác và giá cả rất hợp lý. Rất đáng tin cậy.",
+			"rating": 5
+		}
+	]
+}

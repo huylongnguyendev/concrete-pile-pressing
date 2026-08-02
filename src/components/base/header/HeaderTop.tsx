@@ -1,4 +1,4 @@
-import { headerContactList } from "#/components/data/header/header-contact.data";
+import { headerContactList } from "#/data/header/header-contact.data";
 import { ContactItem } from "./top/ContactItem";
 import { ContactLink } from "./top/ContactLink";
 
