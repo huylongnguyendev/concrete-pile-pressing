@@ -4,6 +4,7 @@ import testimonialsData from "#/data/json/contents/testimonials.json" with {
 };
 import { Animate } from "../animation/Animate";
 import { Section } from "../base/Section";
+import { TitleSection } from "./TitleSection";
 
 export function Testimonials() {
 	return (
@@ -12,24 +13,11 @@ export function Testimonials() {
 			aria-description="Đánh giá và phản hồi từ khách hàng"
 		>
 			<div className="max-w-7xl mx-auto px-4">
-				{/* Tiêu đề Section chuẩn phong cách */}
-				<Animate
-					initial={{ opacity: 0, transform: "translateY(25px)" }}
-					animate={{ opacity: 1, transform: "translateY(0)" }}
-					transition={{ duration: 0.7, ease: "cubic-bezier(0.16, 1, 0.3, 1)" }}
-					className="text-center space-y-3 max-w-3xl mx-auto mb-16"
-				>
-					<span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold uppercase tracking-wider">
-						{testimonialsData.subtitle}
-					</span>
-					<h2 className="text-3xl lg:text-4xl font-bold font-heading">
-						{testimonialsData.title}
-					</h2>
-					<div className="w-20 h-1 bg-primary mx-auto rounded-full mt-2" />
-					<p className="text-muted-foreground text-base md:text-lg pt-2">
-						{testimonialsData.description}
-					</p>
-				</Animate>
+				<TitleSection
+					title={testimonialsData.title}
+					label={{ content: testimonialsData.subtitle }}
+					subtitle={testimonialsData.description}
+				/>
 
 				{/* Lưới đánh giá khách hàng */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

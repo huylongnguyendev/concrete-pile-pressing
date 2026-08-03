@@ -12,6 +12,7 @@ import featuresData from "#/data/json/contents/features.json" with {
 };
 import { Animate } from "../animation/Animate";
 import { Section } from "../base/Section";
+import { TitleSection } from "./TitleSection";
 
 const iconMap: Record<string, Icon> = {
 	ShieldCheck: ShieldCheckIcon,
@@ -26,27 +27,11 @@ export function Features() {
 	return (
 		<Section className="py-20! space-y-16 bg-muted/30">
 			{/* Tiêu đề chính */}
-			<Animate
-				initial={{ opacity: 0, transform: "translateY(25px)" }}
-				animate={{ opacity: 1, transform: "translateY(0)" }}
-				transition={{
-					duration: 0.7,
-					ease: "cubic-bezier(0.16, 1, 0.3, 1)",
-				}}
-				className="text-center space-y-3 max-w-3xl mx-auto"
-			>
-				<span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold uppercase tracking-wider">
-					{featuresData.badge}
-				</span>
-				<h2 className="text-3xl lg:text-4xl font-bold font-heading">
-					{featuresData.title}
-				</h2>
-				<p className="text-muted-foreground text-base">
-					{featuresData.subtitle}
-				</p>
-				<div className="w-20 h-1 bg-primary mx-auto rounded-full mt-2" />
-			</Animate>
-
+			<TitleSection
+				title={featuresData.title}
+				subtitle={featuresData.subtitle}
+				label={{ content: featuresData.badge }}
+			/>
 			{/* Lưới card - Thêm pt-10 để chừa khoảng trống phía trên cho icon lòi ra ngoài */}
 			<ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14 pt-8">
 				{featuresData.features.map((item, index) => {

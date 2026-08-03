@@ -2,6 +2,7 @@ import { QuestionIcon } from "@phosphor-icons/react";
 import faqData from "#/data/json/contents/faq.json" with { type: "json" };
 import { Animate } from "../animation/Animate";
 import { Section } from "../base/Section";
+import { TitleSection } from "./TitleSection";
 
 export function Faq() {
 	return (
@@ -10,24 +11,11 @@ export function Faq() {
 			aria-description="Câu hỏi thường gặp về ép cọc bê tông"
 		>
 			<div className="max-w-4xl mx-auto px-4">
-				{/* Tiêu đề Section chuẩn phong cách */}
-				<Animate
-					initial={{ opacity: 0, transform: "translateY(25px)" }}
-					animate={{ opacity: 1, transform: "translateY(0)" }}
-					transition={{ duration: 0.7, ease: "cubic-bezier(0.16, 1, 0.3, 1)" }}
-					className="text-center space-y-3 max-w-3xl mx-auto mb-16"
-				>
-					<span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold uppercase tracking-wider">
-						{faqData.subtitle}
-					</span>
-					<h2 className="text-3xl lg:text-4xl font-bold font-heading">
-						{faqData.title}
-					</h2>
-					<div className="w-20 h-1 bg-primary mx-auto rounded-full mt-2" />
-					<p className="text-muted-foreground text-base md:text-lg pt-2">
-						{faqData.description}
-					</p>
-				</Animate>
+				<TitleSection
+					title={faqData.title}
+					label={{ content: faqData.subtitle }}
+					subtitle={faqData.description}
+				/>
 
 				{/* Danh sách câu hỏi */}
 				<div className="space-y-4">
