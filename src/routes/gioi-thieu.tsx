@@ -282,37 +282,40 @@ function RouteComponent() {
 
 					<div className="relative w-full overflow-hidden py-2 mask-[linear-gradient(to_right,rgba(0,0,0,0)_0%,rgba(0,0,0,1)_15%,rgba(0,0,0,1)_85%,rgba(0,0,0,0)_100%)] [-webkit-mask-image:linear-gradient(to_right,rgba(0,0,0,0)_0%,rgba(0,0,0,1)_15%,rgba(0,0,0,1)_85%,rgba(0,0,0,0)_100%)]">
 						<div className="animate-marquee flex gap-5 py-2">
-							{duplicatedClients.map((client) => (
-								<div
-									key={`${client.id}-${client.taxCode}`}
-									className="bg-background px-6 py-4 rounded-xl border border-border/80 hover:border-primary shadow-sm hover:shadow-md flex flex-col items-center justify-center text-center shrink-0 min-w-70 transition-all duration-300 group cursor-pointer"
-								>
-									<div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2.5 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-										<svg
-											className="w-4 h-4"
-											fill="none"
-											stroke="currentColor"
-											viewBox="0 0 24 24"
-										>
-											<title>{client.name}</title>
-											<path
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth="2"
-												d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-											></path>
-										</svg>
-									</div>
-									<span className="text-sm font-bold text-accent-foreground/90 whitespace-nowrap mb-1 group-hover:text-primary transition-colors">
-										{client.name}
-									</span>
-									{client.taxCode && (
-										<span className="text-[11px] font-mono tracking-wide text-accent-foreground/50 bg-muted/60 px-2 py-0.5 rounded">
-											MST: {client.taxCode}
+							{duplicatedClients.map((client, index) => {
+								const key = `${client.id}-${client.taxCode}-${index}`;
+								return (
+									<div
+										key={key}
+										className="bg-background px-6 py-4 rounded-xl border border-border/80 hover:border-primary shadow-sm hover:shadow-md flex flex-col items-center justify-center text-center shrink-0 min-w-70 transition-all duration-300 group cursor-pointer"
+									>
+										<div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2.5 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+											<svg
+												className="w-4 h-4"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<title>{client.name}</title>
+												<path
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth="2"
+													d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+												></path>
+											</svg>
+										</div>
+										<span className="text-sm font-bold text-accent-foreground/90 whitespace-nowrap mb-1 group-hover:text-primary transition-colors">
+											{client.name}
 										</span>
-									)}
-								</div>
-							))}
+										{client.taxCode && (
+											<span className="text-[11px] font-mono tracking-wide text-accent-foreground/50 bg-muted/60 px-2 py-0.5 rounded">
+												MST: {client.taxCode}
+											</span>
+										)}
+									</div>
+								);
+							})}
 						</div>
 					</div>
 				</section>
