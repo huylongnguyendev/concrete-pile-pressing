@@ -1,0 +1,161 @@
+{
+	"title": "Ép cọc bê tông hùng dũng",
+	"subTitle": "Uy tín - Chất lượng - Vững bền cùng thời gian",
+	"tagline": "Nền móng vững chắc cho mọi công trình",
+	"mainImage": {
+		"url": "/images/gioi-thieu/tong-quan.jpg",
+		"alt": "Ép cọc bê tông Hùng Dũng - Đơn vị thi công nền móng chuyên nghiệp"
+	},
+	"stats": [
+		{
+			"value": "20",
+			"prefix": "+",
+			"label": "Năm kinh nghiệm"
+		},
+		{
+			"value": "1000",
+			"prefix": "+",
+			"label": "Công trình hoàn thành"
+		},
+		{
+			"value": "100",
+			"prefix": "%",
+			"label": "Khách hàng hài lòng"
+		}
+	],
+	"paragraphs": [
+		"Ép cọc bê tông Hùng Dũng là đơn vị chuyên cung cấp các dịch vụ ép cọc bê tông cốt thép, khoan dẫn trước khi ép và vận chuyển cấu kiện cọc chuyên nghiệp. Với hơn 20 năm kinh nghiệm trong lĩnh vực thi công nền móng, chúng tôi đã xây dựng uy tín vững chắc nhờ đội ngũ kỹ sư lành nghề, hệ thống giàn ép tải, ép neo hiện đại và quy trình thi công an toàn, hiệu quả.",
+		"Chúng tôi cam kết mang đến giải pháp ép cọc bền vững, đảm bảo tính ổn định tối ưu cho nền móng nhà phố, biệt thự, nhà dân cũng như các công trình công nghiệp quy mô lớn. Ép cọc bê tông Hùng Dũng hoạt động dựa trên nguyên tắc cốt lõi: chất lượng hàng đầu, tiết kiệm chi phí và luôn đúng tiến độ cam kết với chủ đầu tư."
+	],
+	"tamNhinSuMenh": {
+		"tamNhin": "Trở thành đơn vị hàng đầu và đáng tin cậy nhất trong lĩnh vực thi công nền móng, ép cọc bê tông, là đối tác chiến lược của mọi nhà thầu và chủ đầu tư trên toàn quốc.",
+		"suMenh": "Cung cấp những giải pháp thi công nền móng tối ưu, đảm bảo độ an toàn tuyệt đối và sự bền vững trường tồn cho từng công trình từ dân dụng đến công nghiệp."
+	},
+	"linhVucHoatDong": [
+		{
+			"id": 1,
+			"title": "Ép cọc bê tông công trình",
+			"description": "Chuyên nhận ép cọc nhà dân, nhà phố, biệt thự và các công trình công nghiệp quy mô lớn với đa dạng tải trọng.",
+			"image": "/images/gioi-thieu/ep-coc-cong-trinh.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Khoan dẫn trước khi ép",
+			"description": "Giải pháp hỗ trợ ép cọc hiệu quả tại những khu vực đông dân cư, chống lún nứt công trình liền kề.",
+			"image": "/images/gioi-thieu/khoan-dan.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Vận chuyển cấu kiện cọc",
+			"description": "Cung cấp dịch vụ vận chuyển cọc bê tông tận chân công trình an toàn, nhanh chóng và đúng tiến độ.",
+			"image": "/images/gioi-thieu/van-chuyen.jpg"
+		},
+		{
+			"id": 4,
+			"title": "Ép cọc tải & Ép neo",
+			"description": "Đa dạng phương pháp ép phù hợp với mọi diện tích mặt bằng hẹp và yêu cầu tải trọng thiết kế khác nhau.",
+			"image": "/images/gioi-thieu/ep-tai-neo.jpg"
+		}
+	],
+	"quyTrinhThiCong": [
+		{
+			"step": "01",
+			"title": "Khảo sát & Tư vấn",
+			"description": "Tiếp nhận thông tin, khảo sát mặt bằng thực tế và tư vấn phương án ép cọc tối ưu nhất."
+		},
+		{
+			"step": "02",
+			"title": "Báo giá & Ký hợp đồng",
+			"description": "Lập dự toán chi phí chi tiết, minh bạch và tiến hành ký kết hợp đồng thi công."
+		},
+		{
+			"step": "03",
+			"title": "Chuẩn bị mặt bằng & Vật tư",
+			"description": "Tập kết trang thiết bị, giàn ép và các cấu kiện cọc bê tông chất lượng cao đến công trình."
+		},
+		{
+			"step": "04",
+			"title": "Tiến hành thi công",
+			"description": "Thực hiện ép cọc/khoan dẫn theo đúng bản vẽ thiết kế kỹ thuật dưới sự giám sát chặt chẽ."
+		},
+		{
+			"step": "05",
+			"title": "Nghiệm thu & Bàn giao",
+			"description": "Kiểm tra độ sâu, tải trọng ép, tiến hành nghiệm thu và bàn giao mặt bằng cho chủ đầu tư."
+		}
+	],
+	"camKetChatLuong": [
+		{
+			"title": "Chất lượng cọc chuẩn mác",
+			"description": "Cọc bê tông sản xuất trên dây chuyền hiện đại, đạt chuẩn kỹ thuật và kiểm định nghiêm ngặt."
+		},
+		{
+			"title": "Thi công đúng tiến độ",
+			"description": "Cam kết hoàn thành công trình đúng thời hạn thỏa thuận, không làm ảnh hưởng kế hoạch xây dựng."
+		},
+		{
+			"title": "An toàn tuyệt đối",
+			"description": "Tuân thủ nghiêm ngặt các quy định về an toàn lao động và bảo vệ các công trình liền kề."
+		}
+	],
+	"khachHangTieuBieu": [
+		{
+			"id": 1,
+			"name": "Công ty TNHH Tập đoàn Thịnh An",
+			"taxCode": "5300249607"
+		},
+		{
+			"id": 2,
+			"name": "Hộ kinh doanh Thùy Dương",
+			"taxCode": "8090693671-001"
+		},
+		{
+			"id": 3,
+			"name": "Công ty CP Tư vấn Xây dựng và Thương mại THN Việt Nam",
+			"taxCode": "0106863736"
+		},
+		{
+			"id": 4,
+			"name": "Công ty TNHH Khôi Nguyên Group",
+			"taxCode": "6001774688"
+		},
+		{
+			"id": 5,
+			"name": "Công ty CP Xây dựng Bảo Sơn",
+			"taxCode": "0401513866"
+		},
+		{
+			"id": 6,
+			"name": "Công ty CP Đầu tư Xây dựng Đạt Minh",
+			"taxCode": "0310754575"
+		},
+		{
+			"id": 7,
+			"name": "Công ty TNHH Tenox Châu Á",
+			"taxCode": "0313449241"
+		},
+		{
+			"id": 8,
+			"name": "Công ty TNHH TM và XD Nhà thép Khang Thịnh",
+			"taxCode": "3502273207"
+		},
+		{
+			"id": 9,
+			"name": "Công ty TNHH Xây dựng & Dịch vụ Hữu Hậu Tiến",
+			"taxCode": "0316836400"
+		}
+	],
+	"khuVucPhucVu": [
+		"Đồng Nai (Biên Hòa, Long Thành, Nhơn Trạch, Trảng Bom)",
+		"Bà Rịa - Vũng Tàu (TP. Vũng Tàu, TP. Bà Rịa, Thị xã Phú Mỹ)",
+		"TP. Hồ Chí Minh",
+		"Bình Dương",
+		"Long An",
+		"Các tỉnh miền Nam"
+	],
+	"thongTinLienHe": {
+		"hotline": "09...",
+		"email": "lienhe@epcocbetonghungdung.com",
+		"diaChi": "Vui lòng cập nhật địa chỉ thực tế của doanh nghiệp"
+	}
+}

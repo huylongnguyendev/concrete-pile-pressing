@@ -1,0 +1,34 @@
+{
+	"badge": "Về Chúng tôi",
+	"title": "Nền Móng Vững Chắc Cho Mọi Công Trình Tại Đồng Nai & Bà Rịa - Vũng Tàu",
+	"experience": {
+		"number": "20+",
+		"label": "Năm",
+		"sublabel": "Kinh Nghiệm"
+	},
+	"paragraphs": [
+		"Chúng tôi cung cấp các giải pháp ép cọc bê tông và khoan dẫn cho các công trình xây dựng dân dụng và công nghiệp. Mong muốn mang lại những giá trị bền vững cho mọi công trình lớn nhỏ.",
+		"Luôn cam kết mang đến dịch vụ ép cọc chất lượng cao, an toàn và tiết kiệm. Chúng tôi đồng hành cùng khách hàng từ giai đoạn tư vấn đến khi hoàn thiện công trình, đảm bảo hiệu quả tối ưu nhất."
+	],
+	"image": {
+		"src": "./about.webp",
+		"alt": "Đội ngũ Hùng Dũng - Ép cọc bê tông Đồng Nai & Vũng Tàu"
+	},
+	"features": [
+		{
+			"icon": "✓",
+			"title": "Thi Công Chuẩn",
+			"description": "Đúng tiến độ"
+		},
+		{
+			"icon": "💬",
+			"title": "Tư Vấn Tận Tình",
+			"description": "Khảo sát & Báo giá"
+		},
+		{
+			"icon": "🛡️",
+			"title": "Bảo Hành Dài",
+			"description": "An tâm tuyệt đối"
+		}
+	]
+}

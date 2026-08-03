@@ -1,0 +1,27 @@
+{
+	"subtitle": "Quy trình chuyên nghiệp",
+	"title": "Quy Trình Thi Công Ép Cọc",
+	"description": "Các bước làm việc rõ ràng, khoa học giúp chủ đầu tư dễ dàng theo dõi tiến độ công trình.",
+	"steps": [
+		{
+			"step": "01",
+			"title": "Khảo sát & Tư vấn",
+			"description": "Tiếp nhận thông tin, khảo sát thực tế mặt bằng và địa chất khu vực thi công tại Đồng Nai hoặc Vũng Tàu để tư vấn phương án ép cọc phù hợp."
+		},
+		{
+			"step": "02",
+			"title": "Báo giá & Ký hợp đồng",
+			"description": "Lập dự toán chi tiết, minh bạch chi phí vật tư, máy móc và tiến hành ký kết hợp đồng thi công rõ ràng."
+		},
+		{
+			"step": "03",
+			"title": "Thi công ép cọc",
+			"description": "Vận chuyển máy móc, cọc bê tông đến công trình và tiến hành thi công đúng kỹ thuật, đảm bảo an toàn và độ sâu thiết kế."
+		},
+		{
+			"step": "04",
+			"title": "Nghiệm thu & Bàn giao",
+			"description": "Kiểm tra lực ép, độ sâu cuối cùng, tiến hành nghiệm thu công trình với chủ nhà và bàn giao mặt bằng thi công móng."
+		}
+	]
+}

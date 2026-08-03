@@ -1,0 +1,20 @@
+{
+	"title": "Dịch Vụ Nền Móng & Thi Công Chuyên Sâu",
+	"services": [
+		{
+			"img": "./about.webp",
+			"title": "Ép cọc bê tông trọn gói",
+			"description": "Giải pháp ép cọc ly tâm và vuông tiên tiến, đảm bảo tải trọng vững chắc cho mọi công trình từ nhà dân dụng đến nhà xưởng công nghiệp."
+		},
+		{
+			"img": "./",
+			"title": "Vận chuyển thiết bị chuyên dụng",
+			"description": "Hệ thống xe vận tải và cẩu chuyên dụng hỗ trợ điều phối, di dời máy móc, giàn ép đến công trường nhanh chóng và an toàn tuyệt đối."
+		},
+		{
+			"img": "./",
+			"title": "Khoan dẫn trước khi ép cọc",
+			"description": "Thi công khoan dẫn chuyên nghiệp giúp xử lý các tầng đất cứng, triệt tiêu hiện tượng đùn đất và bảo vệ công trình lân cận."
+		}
+	]
+}
