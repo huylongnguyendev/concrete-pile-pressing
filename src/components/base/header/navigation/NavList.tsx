@@ -27,7 +27,7 @@ export function NavList() {
 		<nav
 			ref={ref}
 			className={cn(
-				"max-lg:absolute top-0 -left-full max-lg:bg-background max-lg:shadow-lg max-lg:w-1/2 max-lg:h-dvh max-lg:p-4 transition-all duration-300 z-9999",
+				"max-lg:absolute top-0 -left-full max-lg:bg-background max-lg:shadow-lg max-lg:w-10/12 max-lg:h-dvh max-lg:p-4 transition-all duration-300 z-9999",
 				isOpenMenu && "left-0",
 			)}
 		>

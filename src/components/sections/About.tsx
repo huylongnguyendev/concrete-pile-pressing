@@ -87,9 +87,9 @@ export function About() {
 										{feature.icon}
 									</div>
 									<div>
-										<h4 className="font-bold text-foreground text-sm">
+										<h3 className="font-bold text-foreground text-sm">
 											{feature.title}
-										</h4>
+										</h3>
 										<p className="text-xs text-muted-foreground">
 											{feature.description}
 										</p>

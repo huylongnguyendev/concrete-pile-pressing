@@ -45,10 +45,23 @@ const headerNavList: IHeaderNav[] = [
 		],
 	},
 	{
-		key: "cong-trinh-thi-cong",
-		title: "Các công trình thi công của Công ty Ép cọc Bê tông Hùng Dũng",
-		label: "công trình thi công",
-		href: "/cong-trinh-thi-cong",
+		key: "tin-tuc",
+		title: "các nội dung liên quan đến ép cọc bê tông Hùng Dũng",
+		label: "tin tức",
+		child: [
+			{
+				key: "cong-trinh-thi-cong",
+				title: "Các công trình thi công của Công ty Ép cọc Bê tông Hùng Dũng",
+				label: "công trình thi công",
+				href: "/cong-trinh-thi-cong",
+			},
+			{
+				key: "tin-tuc-child",
+				title: "Các tin tức và kiến thức về ép cọc bê tông và xây dựng tại miền Nam",
+				label: "tin tức",
+				href: "/tin-tuc",
+			},
+		],
 	},
 	{
 		key: "lien-he",
