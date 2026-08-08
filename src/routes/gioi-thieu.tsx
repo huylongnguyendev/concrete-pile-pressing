@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Animate } from "#/components/animation/Animate";
+import { ContactCta } from "#/components/base/ContactCta";
 import { CountUp } from "#/components/base/CountUp";
-import { Button } from "#/components/ui/button";
 import introduce from "#/data/json/introduce/content.json" with {
 	type: "json",
 };
@@ -320,20 +320,7 @@ function RouteComponent() {
 					</div>
 				</section>
 			)}
-
-			{/* Call to Action cuối trang sử dụng Button của Shadcn */}
-			<section className="mt-12 text-center bg-primary text-primary-foreground p-8 rounded-2xl shadow-lg">
-				<h2 className="text-2xl font-bold mb-3">
-					Cần thi công nền móng tại Đồng Nai & Vũng Tàu?
-				</h2>
-				<p className="text-primary-foreground/90 text-sm max-w-xl mx-auto mb-6">
-					Đội ngũ kỹ thuật của Ép cọc bê tông Hùng Dũng luôn sẵn sàng khảo sát
-					thực tế và báo giá nhanh chóng cho công trình của bạn.
-				</p>
-				<Button asChild variant="secondary" size="lg" className="font-bold">
-					<a href="/lien-he">Liên hệ tư vấn ngay</a>
-				</Button>
-			</section>
+			<ContactCta />
 		</div>
 	);
 }

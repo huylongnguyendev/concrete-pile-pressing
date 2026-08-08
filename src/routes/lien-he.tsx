@@ -11,6 +11,7 @@ import { Animate } from "#/components/animation/Animate";
 import { Button } from "#/components/ui/button";
 import { Input } from "#/components/ui/input";
 import { Label } from "#/components/ui/label";
+import { ContactCta } from "#/components/base/ContactCta";
 
 export const Route = createFileRoute("/lien-he")({
 	component: RouteComponent,
@@ -267,20 +268,7 @@ function RouteComponent() {
 					</div>
 				</Animate>
 			</section>
-
-			{/* Call to Action cuối trang */}
-			<section className="text-center bg-primary text-primary-foreground p-8 rounded-2xl shadow-lg">
-				<h2 className="text-2xl font-bold mb-3">
-					Cần hỗ trợ gấp kỹ thuật nền móng?
-				</h2>
-				<p className="text-primary-foreground/90 text-sm max-w-xl mx-auto mb-6">
-					Nhấc máy gọi ngay cho đường dây nóng của chúng tôi để được tư vấn
-					phương án ép cọc tối ưu và tiết kiệm nhất.
-				</p>
-				<Button asChild variant="secondary" size="lg" className="font-bold">
-					<a href="tel:0912345678">Gọi Hotline: 0912.345.678</a>
-				</Button>
-			</section>
+			<ContactCta />
 		</div>
 	);
 }

@@ -1,0 +1,62 @@
+generator client {
+    provider = "prisma-client"
+    output   = "../app/generated/prisma"
+}
+
+datasource db {
+    provider = "postgresql"
+}
+
+model User {
+    id          String @id @default(uuid())
+    username    String @unique
+    phoneNumber String @unique
+    password    String
+    displayName String
+    role        Role   @default(STAFF)
+    status      Status @default(ACTIVE)
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    author    Author?
+}
+
+enum Role {
+    ADMIN
+    MASTER
+    STAFF
+}
+
+enum Status {
+    ACTIVE
+    INACTIVE
+}
+
+model Post {
+    id         String   @id @default(uuid())
+    slug       String   @unique
+    title      String
+    categoryId String   @map("category_id")
+    category   Category @relation(fields: [categoryId], references: [id])
+    authorId   String   @map("author_id")
+    author     Author   @relation(fields: [authorId], references: [id])
+    content    Json
+    createdAt  DateTime @default(now())
+    updatedAt  DateTime @updatedAt
+}
+
+model Category {
+    id    String @id @default(uuid())
+    name  String
+    slug  String @unique
+    posts Post[]
+}
+
+model Author {
+    id        String   @id @default(uuid())
+    userId    String   @unique @map("user_id")
+    user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+    posts     Post[]
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}

@@ -10,6 +10,7 @@ import service from "#/data/json/contents/services.json" with { type: "json" };
 import { Animate } from "../animation/Animate";
 import { Section } from "../base/Section";
 import { Button } from "../ui/button";
+import { TitleSection } from "./TitleSection";
 
 // Map icon tương ứng cho từng dịch vụ
 const serviceIcons: Icon[] = [WrenchIcon, TruckIcon, GearSixIcon];
@@ -21,25 +22,10 @@ export function Services() {
 			aria-description="Các dịch vụ của Ép Cọc Hùng Dũng"
 		>
 			<div className="space-y-12 lg:px-11">
-				{/* Tiêu đề Section chuẩn phong cách Features */}
-				<Animate
-					initial={{ opacity: 0, transform: "translateY(25px)" }}
-					animate={{ opacity: 1, transform: "translateY(0)" }}
-					transition={{
-						duration: 0.7,
-						ease: "cubic-bezier(0.16, 1, 0.3, 1)",
-					}}
-					className="text-center space-y-3 max-w-3xl mx-auto"
-				>
-					<span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold uppercase tracking-wider">
-						Giải pháp toàn diện
-					</span>
-					<h2 className="text-3xl lg:text-4xl font-bold font-heading">
-						{service.title}
-					</h2>
-					<div className="w-20 h-1 bg-primary mx-auto rounded-full mt-2" />
-				</Animate>
-
+				<TitleSection
+					title={service.title}
+					label={{ content: "Giải pháp toàn diện" }}
+				/>
 				<ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{service.services.map((item, index) => {
 						const key = `service-item-${index}`;

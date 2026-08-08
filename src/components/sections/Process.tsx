@@ -10,6 +10,7 @@ import processData from "#/data/json/contents/process.json" with {
 };
 import { Animate } from "../animation/Animate";
 import { Section } from "../base/Section";
+import { TitleSection } from "./TitleSection";
 
 // Map icon tương ứng cho từng bước quy trình
 const processIcons: Icon[] = [
@@ -26,27 +27,11 @@ export function Process() {
 			aria-description="Quy trình thi công ép cọc bê tông"
 		>
 			<div className="max-w-7xl mx-auto px-4">
-				{/* Tiêu đề Section chuẩn phong cách */}
-				<Animate
-					initial={{ opacity: 0, transform: "translateY(25px)" }}
-					animate={{ opacity: 1, transform: "translateY(0)" }}
-					transition={{
-						duration: 0.7,
-						ease: "cubic-bezier(0.16, 1, 0.3, 1)",
-					}}
-					className="text-center space-y-3 max-w-3xl mx-auto mb-16"
-				>
-					<span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold uppercase tracking-wider">
-						{processData.subtitle}
-					</span>
-					<h2 className="text-3xl lg:text-4xl font-bold font-heading">
-						{processData.title}
-					</h2>
-					<div className="w-20 h-1 bg-primary mx-auto rounded-full mt-2" />
-					<p className="text-muted-foreground text-base md:text-lg pt-2">
-						{processData.description}
-					</p>
-				</Animate>
+				<TitleSection
+					title={processData.title}
+					label={{ content: processData.subtitle }}
+					subtitle={processData.description}
+				/>
 
 				{/* Các bước quy trình (Grid 4 cột) */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

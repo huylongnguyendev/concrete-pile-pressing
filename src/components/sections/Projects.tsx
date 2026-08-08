@@ -7,6 +7,7 @@ import { Link } from "@tanstack/react-router";
 import { Animate } from "../animation/Animate";
 import { Section } from "../base/Section";
 import { Button } from "../ui/button";
+import { TitleSection } from "./TitleSection";
 
 // Dữ liệu mẫu các công trình tiêu biểu
 const featuredProjects = [
@@ -41,67 +42,12 @@ export function Projects() {
 		<Section className="py-20 bg-zinc-50 dark:bg-zinc-900/50">
 			<div className="max-w-7xl mx-auto px-4">
 				{/* Tiêu đề phần (Có đường border ngắn ngắn chuẩn mẫu cũ) */}
-				<div className="text-center space-y-3 max-w-3xl mx-auto mb-16">
-					<Animate
-						initial={{ opacity: 0, transform: "translateY(25px)" }}
-						animate={{ opacity: 1, transform: "translateY(0)" }}
-						transition={{
-							duration: 0.7,
-							ease: "cubic-bezier(0.16, 1, 0.3, 1)",
-						}}
-					>
-						<span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold uppercase tracking-wider">
-							<BuildingsIcon
-								size={16}
-								weight="bold"
-								className="inline-block mr-1.5 -mt-0.5"
-							/>
-							Công trình tiêu biểu
-						</span>
-					</Animate>
-
-					<Animate
-						initial={{ opacity: 0, transform: "translateY(25px)" }}
-						animate={{ opacity: 1, transform: "translateY(0)" }}
-						transition={{
-							duration: 0.7,
-							delay: 0.1,
-							ease: "cubic-bezier(0.16, 1, 0.3, 1)",
-						}}
-					>
-						<h2 className="text-3xl lg:text-4xl font-bold font-heading">
-							Dự Án Đã Thi Công Thực Tế
-						</h2>
-					</Animate>
-
-					<Animate
-						initial={{ opacity: 0, transform: "translateY(25px)" }}
-						animate={{ opacity: 1, transform: "translateY(0)" }}
-						transition={{
-							duration: 0.7,
-							delay: 0.2,
-							ease: "cubic-bezier(0.16, 1, 0.3, 1)",
-						}}
-					>
-						<div className="w-20 h-1 bg-primary mx-auto rounded-full mt-2" />
-					</Animate>
-
-					<Animate
-						initial={{ opacity: 0, transform: "translateY(25px)" }}
-						animate={{ opacity: 1, transform: "translateY(0)" }}
-						transition={{
-							duration: 0.7,
-							delay: 0.3,
-							ease: "cubic-bezier(0.16, 1, 0.3, 1)",
-						}}
-					>
-						<p className="text-zinc-600 dark:text-zinc-400 text-base md:text-lg pt-2">
-							Hàng trăm công trình nhà dân, biệt thự và nhà xưởng được Hùng Dũng
-							thi công móng vững chắc tại Đồng Nai & Vũng Tàu.
-						</p>
-					</Animate>
-				</div>
-
+				<TitleSection
+					title="Dự Án Đã Thi Công Thực Tế"
+					subtitle="Hàng trăm công trình nhà dân, biệt thự và nhà xưởng được Hùng Dũng thi
+					công móng vững chắc tại Đồng Nai & Vũng Tàu."
+					label={{ icon: BuildingsIcon, content: "Công trình tiêu biểu" }}
+				/>
 				{/* Lưới danh sách dự án */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
 					{featuredProjects.map((project, index) => (
@@ -156,7 +102,6 @@ export function Projects() {
 						</Animate>
 					))}
 				</div>
-
 				{/* Nút xem tất cả công trình */}
 				<div className="text-center">
 					<Animate

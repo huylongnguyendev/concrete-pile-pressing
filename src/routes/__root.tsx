@@ -1,6 +1,13 @@
 import { TanStackDevtools } from "@tanstack/react-devtools";
-import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { FormDevtoolsPanel } from "@tanstack/react-form-devtools";
+import {
+	createRootRoute,
+	HeadContent,
+	Scripts,
+	useMatches,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
+import { Toaster } from "sonner";
 import { Footer } from "#/components/base/footer/Footer";
 import { Header } from "#/components/base/header/Header";
 import { ScrollToTop } from "#/components/base/ScrollToTop";
@@ -31,28 +38,37 @@ export const Route = createRootRoute({
 });
 
 function RootDocument({ children }: { children: React.ReactNode }) {
+	const showNavbar = useMatches({
+		select: (matches) =>
+			!matches.some((m) => m.staticData?.showNavbar === false),
+	});
 	return (
 		<html lang="en">
 			<head>
 				<HeadContent />
 			</head>
 			<body>
-				<Header />
+				{showNavbar ? <Header /> : null}
 				<main>{children}</main>
 				<ScrollToTop />
-				<Footer />
+				{showNavbar ? <Footer /> : null}
+				<Toaster richColors />
+				<Scripts />
 				<TanStackDevtools
 					config={{
-						position: "bottom-right",
+						position: "top-right",
 					}}
 					plugins={[
 						{
 							name: "Tanstack Router",
 							render: <TanStackRouterDevtoolsPanel />,
 						},
+						{
+							name: "TanStack Form",
+							render: <FormDevtoolsPanel />,
+						},
 					]}
 				/>
-				<Scripts />
 			</body>
 		</html>
 	);
