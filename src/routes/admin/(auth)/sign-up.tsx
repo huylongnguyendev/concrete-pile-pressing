@@ -2,6 +2,7 @@ import { EyeIcon, EyeSlashIcon } from "@phosphor-icons/react";
 import { useForm } from "@tanstack/react-form";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
+import { toast } from "sonner";
 import { Button } from "#/components/ui/button";
 import {
 	Card,
@@ -13,9 +14,8 @@ import {
 } from "#/components/ui/card";
 import { Field, FieldError, FieldLabel } from "#/components/ui/field";
 import { Input } from "#/components/ui/input";
+import { signUpFn } from "#/lib/db/user/user.server";
 import { type SignUp, SignUpSchema } from "#/lib/shared/schema/user.schema";
-import { signUpFn } from "#/lib/db/user/user.db";
-import { toast } from "sonner";
 
 export const Route = createFileRoute("/admin/(auth)/sign-up")({
 	staticData: { showNavbar: false },
