@@ -55,7 +55,7 @@ const signInFn = createServerFn({ method: "POST" })
 	.validator((data: SignIn) => data)
 	.handler(async ({ data }) => {
 		try {
-			const { identicator, password, isRemember } = data;
+			const { identicator, password } = data;
 
 			const user = await prisma.user.findFirst({
 				where: {
