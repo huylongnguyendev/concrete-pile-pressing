@@ -12,6 +12,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "#/components/ui/card";
+import { Checkbox } from "#/components/ui/checkbox";
 import {
 	Field,
 	FieldError,
@@ -19,9 +20,8 @@ import {
 	FieldLabel,
 } from "#/components/ui/field";
 import { Input } from "#/components/ui/input";
-import { signInFn } from "#/lib/db/user/user.db";
+import { signInFn } from "#/lib/db/user/user.server";
 import { type SignIn, SignInSchema } from "#/lib/shared/schema/user.schema";
-import { Checkbox } from "#/components/ui/checkbox";
 
 export const Route = createFileRoute("/admin/(auth)/sign-in")({
 	staticData: { showNavbar: false },

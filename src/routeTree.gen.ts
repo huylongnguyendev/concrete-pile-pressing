@@ -13,9 +13,11 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as DichVuRouteImport } from './routes/dich-vu'
 import { Route as GioiThieuRouteImport } from './routes/gioi-thieu'
 import { Route as LienHeRouteImport } from './routes/lien-he'
+import { Route as AdminappRouteRouteImport } from './routes/admin/(app)/route'
 import { Route as TinTucIndexRouteImport } from './routes/tin-tuc/index'
 import { Route as TinTucSlugRouteImport } from './routes/tin-tuc/$slug'
 import { Route as AdminappIndexRouteImport } from './routes/admin/(app)/index'
+import { Route as AdminappSettingsRouteImport } from './routes/admin/(app)/settings'
 import { Route as AdminauthSignInRouteImport } from './routes/admin/(auth)/sign-in'
 import { Route as AdminauthSignUpRouteImport } from './routes/admin/(auth)/sign-up'
 
@@ -39,6 +41,11 @@ const LienHeRoute = LienHeRouteImport.update({
   path: '/lien-he',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminappRouteRoute = AdminappRouteRouteImport.update({
+  id: '/admin/(app)',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TinTucIndexRoute = TinTucIndexRouteImport.update({
   id: '/tin-tuc/',
   path: '/tin-tuc/',
@@ -50,9 +57,14 @@ const TinTucSlugRoute = TinTucSlugRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminappIndexRoute = AdminappIndexRouteImport.update({
-  id: '/admin/(app)/',
-  path: '/admin/',
-  getParentRoute: () => rootRouteImport,
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminappRouteRoute,
+} as any)
+const AdminappSettingsRoute = AdminappSettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => AdminappRouteRoute,
 } as any)
 const AdminauthSignInRoute = AdminauthSignInRouteImport.update({
   id: '/admin/(auth)/sign-in',
@@ -70,8 +82,10 @@ export interface FileRoutesByFullPath {
   '/dich-vu': typeof DichVuRoute
   '/gioi-thieu': typeof GioiThieuRoute
   '/lien-he': typeof LienHeRoute
+  '/admin': typeof AdminappRouteRouteWithChildren
   '/tin-tuc/$slug': typeof TinTucSlugRoute
   '/tin-tuc/': typeof TinTucIndexRoute
+  '/admin/settings': typeof AdminappSettingsRoute
   '/admin/sign-in': typeof AdminauthSignInRoute
   '/admin/sign-up': typeof AdminauthSignUpRoute
   '/admin/': typeof AdminappIndexRoute
@@ -83,6 +97,7 @@ export interface FileRoutesByTo {
   '/lien-he': typeof LienHeRoute
   '/tin-tuc/$slug': typeof TinTucSlugRoute
   '/tin-tuc': typeof TinTucIndexRoute
+  '/admin/settings': typeof AdminappSettingsRoute
   '/admin/sign-in': typeof AdminauthSignInRoute
   '/admin/sign-up': typeof AdminauthSignUpRoute
   '/admin': typeof AdminappIndexRoute
@@ -93,8 +108,10 @@ export interface FileRoutesById {
   '/dich-vu': typeof DichVuRoute
   '/gioi-thieu': typeof GioiThieuRoute
   '/lien-he': typeof LienHeRoute
+  '/admin/(app)': typeof AdminappRouteRouteWithChildren
   '/tin-tuc/$slug': typeof TinTucSlugRoute
   '/tin-tuc/': typeof TinTucIndexRoute
+  '/admin/(app)/settings': typeof AdminappSettingsRoute
   '/admin/(auth)/sign-in': typeof AdminauthSignInRoute
   '/admin/(auth)/sign-up': typeof AdminauthSignUpRoute
   '/admin/(app)/': typeof AdminappIndexRoute
@@ -106,8 +123,10 @@ export interface FileRouteTypes {
     | '/dich-vu'
     | '/gioi-thieu'
     | '/lien-he'
+    | '/admin'
     | '/tin-tuc/$slug'
     | '/tin-tuc/'
+    | '/admin/settings'
     | '/admin/sign-in'
     | '/admin/sign-up'
     | '/admin/'
@@ -119,6 +138,7 @@ export interface FileRouteTypes {
     | '/lien-he'
     | '/tin-tuc/$slug'
     | '/tin-tuc'
+    | '/admin/settings'
     | '/admin/sign-in'
     | '/admin/sign-up'
     | '/admin'
@@ -128,8 +148,10 @@ export interface FileRouteTypes {
     | '/dich-vu'
     | '/gioi-thieu'
     | '/lien-he'
+    | '/admin/(app)'
     | '/tin-tuc/$slug'
     | '/tin-tuc/'
+    | '/admin/(app)/settings'
     | '/admin/(auth)/sign-in'
     | '/admin/(auth)/sign-up'
     | '/admin/(app)/'
@@ -140,11 +162,11 @@ export interface RootRouteChildren {
   DichVuRoute: typeof DichVuRoute
   GioiThieuRoute: typeof GioiThieuRoute
   LienHeRoute: typeof LienHeRoute
+  AdminappRouteRoute: typeof AdminappRouteRouteWithChildren
   TinTucSlugRoute: typeof TinTucSlugRoute
   TinTucIndexRoute: typeof TinTucIndexRoute
   AdminauthSignInRoute: typeof AdminauthSignInRoute
   AdminauthSignUpRoute: typeof AdminauthSignUpRoute
-  AdminappIndexRoute: typeof AdminappIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -177,6 +199,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LienHeRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/(app)': {
+      id: '/admin/(app)'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminappRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tin-tuc/': {
       id: '/tin-tuc/'
       path: '/tin-tuc'
@@ -193,10 +222,17 @@ declare module '@tanstack/react-router' {
     }
     '/admin/(app)/': {
       id: '/admin/(app)/'
-      path: '/admin'
+      path: '/'
       fullPath: '/admin/'
       preLoaderRoute: typeof AdminappIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminappRouteRoute
+    }
+    '/admin/(app)/settings': {
+      id: '/admin/(app)/settings'
+      path: '/settings'
+      fullPath: '/admin/settings'
+      preLoaderRoute: typeof AdminappSettingsRouteImport
+      parentRoute: typeof AdminappRouteRoute
     }
     '/admin/(auth)/sign-in': {
       id: '/admin/(auth)/sign-in'
@@ -215,16 +251,30 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface AdminappRouteRouteChildren {
+  AdminappSettingsRoute: typeof AdminappSettingsRoute
+  AdminappIndexRoute: typeof AdminappIndexRoute
+}
+
+const AdminappRouteRouteChildren: AdminappRouteRouteChildren = {
+  AdminappSettingsRoute: AdminappSettingsRoute,
+  AdminappIndexRoute: AdminappIndexRoute,
+}
+
+const AdminappRouteRouteWithChildren = AdminappRouteRoute._addFileChildren(
+  AdminappRouteRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DichVuRoute: DichVuRoute,
   GioiThieuRoute: GioiThieuRoute,
   LienHeRoute: LienHeRoute,
+  AdminappRouteRoute: AdminappRouteRouteWithChildren,
   TinTucSlugRoute: TinTucSlugRoute,
   TinTucIndexRoute: TinTucIndexRoute,
   AdminauthSignInRoute: AdminauthSignInRoute,
   AdminauthSignUpRoute: AdminauthSignUpRoute,
-  AdminappIndexRoute: AdminappIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
