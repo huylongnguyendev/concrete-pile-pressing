@@ -41,7 +41,13 @@ function RouteComponent() {
 		},
 		onSubmit: async ({ value }) => {
 			toast.info("Đang xử lý vui lòng chờ trong giây lát...");
+
 			const res = await signUpFn({ data: value });
+			if (!res) {
+				toast.error("Không nhận được phản hồi từ máy chủ.");
+				return;
+			}
+
 			if (res.success) {
 				toast.success(res.message);
 				navigate({ to: "/admin/sign-in" });
